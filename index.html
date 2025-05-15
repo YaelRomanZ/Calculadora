@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="gradient"></div>
+    <div class="calculadora">
+        <h1 class="titulo"> Calculadora </h1> 
+        <div class="res-pan">
+            <input type="text" id="pantalla" disabled />
+            <input type="text" id="resultado" disabled/> <!--AYMT. En este input se muestra el resultado del calculo-->
+        </div>
+      <section class="botones-container">
+        <div class="botones">
+          <div class="boton-numero">
+            <button class="bt-op" onclick="borrar()">C</button>
+            <button class="bt-op" onclick="operar('/')">/</button>
+            <button class="bt-op" onclick="operar('+')">+</button>
+            <button class="bt-op" onclick="operar('*')">x</button>
+            <button class="bt-op" onclick="operar('-')">-</button>
+            <button class="bt-op" onclick="calcular()">=</button>
+            <button class="bt-nu" onclick="insertar('1')">1</button>
+            <button class="bt-nu" onclick="insertar('2')">2</button>
+            <button class="bt-nu" onclick="insertar('3')">3</button>
+            <button class="bt-nu" onclick="insertar('4')">4</button>
+            <button class="bt-nu" onclick="insertar('5')">5</button>
+            <button class="bt-nu" onclick="insertar('6')">6</button>
+            <button class="bt-nu" onclick="insertar('7')">7</button>
+            <button class="bt-nu" onclick="insertar('8')">8</button>
+            <button class="bt-nu" onclick="insertar('9')">9</button>
+            <button class="bt-nu cero" onclick="insertar('0')">0</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer"> 
+        <p>Equipo:</p>
+        <ul>
+            <li>Flores Beltran Juan Diego</li>
+            <li>Mendez Colin Victor Manuel</li>
+            <li>Reyes Renodn Yael Roman</li>
+            <li>Mondragon Tellez Antonio Yoab</li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
