@@ -1,0 +1,46 @@
+/* Themes */
+
+/* Light */
+:root[data-theme='light'] {
+	--bg-body: #f0f0f0;
+	--bg-calc: #ffffff;
+	--bg-screen: #eaeaea;
+	--text-screen: #333;
+	--op-bg: #4d4d6a;
+	--op-bg-hover: #765e80;
+	--num-bg: #2b2b2b;
+	--num-bg-hover: #4f4f4f;
+	--text-color: #fff;
+	--shadow-op: rgba(45, 24, 51, 0.712);
+	--shadow-nu: rgba(131, 131, 131, 0.712);
+}
+
+/* Dark */
+:root[data-theme='dark'] {
+	--bg-body: #0f1c2e;
+	--bg-calc: #1f2b3e;
+	--bg-screen: #374357;
+	--text-color: #ffffff;
+	--text-screen: #e0e0e0;
+	--op-bg: #3d5a80;
+	--op-bg-hover: #4d648d;
+	--shadow-op: rgba(77, 100, 141, 0.5);
+	--num-bg: #1f3a5f;
+	--num-bg-hover: #4d648d;
+	--shadow-nu: rgba(172, 194, 239, 0.3);
+}
+
+/* Dark - Green */
+:root[data-theme='dark-green'] {
+	--bg-body: #1e1e1e;
+	--bg-calc: #2d2d2d;
+	--bg-screen: #454545;
+	--text-screen: #e0e0e0;
+	--op-bg: #2e8b57;
+	--op-bg-hover: #61bc84;
+	--num-bg: #345e37;
+	--num-bg-hover: #61bc84;
+	--text-color: #ffffff;
+	--shadow-op: rgba(46, 139, 87, 0.7);
+	--shadow-nu: rgba(97, 188, 132, 0.6);
+}

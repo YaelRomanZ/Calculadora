@@ -1,0 +1,143 @@
+@media (max-width: 768px) {
+	body {
+		padding-top: 20px;
+		align-items: flex-start;
+	}
+
+	.calculadora {
+		max-width: 300px;
+	}
+
+	.titulo {
+		width: min-content;
+	}
+
+	.res-pan {
+		margin-bottom: 0;
+	}
+
+	.botones-container {
+		width: 100%;
+		max-width: 300px;
+	}
+
+	.boton-numero {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 10px;
+		max-width: 300px;
+		margin: 0;
+		justify-items: center;
+	}
+
+	.boton-numero .btn-7 {
+		grid-area: 1 / 1;
+	}
+
+	.boton-numero .btn-8 {
+		grid-area: 1 / 2;
+	}
+
+	.boton-numero .btn-9 {
+		grid-area: 1 / 3;
+	}
+
+	.boton-numero .btn-div {
+		grid-area: 1 / 4;
+	}
+
+	.boton-numero .btn-4 {
+		grid-area: 2 / 1;
+	}
+
+	.boton-numero .btn-5 {
+		grid-area: 2 / 2;
+	}
+
+	.boton-numero .btn-6 {
+		grid-area: 2 / 3;
+	}
+
+	.boton-numero .btn-mult {
+		grid-area: 2 / 4;
+	}
+
+	.boton-numero .btn-1 {
+		grid-area: 3 / 1;
+	}
+
+	.boton-numero .btn-2 {
+		grid-area: 3 / 2;
+	}
+
+	.boton-numero .btn-3 {
+		grid-area: 3 / 3;
+	}
+
+	.boton-numero .btn-sub {
+		grid-area: 3 / 4;
+	}
+
+	.boton-numero .btn-0 {
+		grid-area: 4 / 1;
+	}
+
+	.boton-numero .cero {
+		grid-column: auto;
+	}
+
+	.boton-numero .btn-clear {
+		grid-area: 4 / 2;
+	}
+
+	.boton-numero .btn-eq {
+		grid-area: 4 / 3;
+		background-color: orange;
+	}
+
+	.boton-numero .btn-sum {
+		grid-area: 4 / 4;
+	}
+
+	.boton-numero .bt-op,
+	.boton-numero .bt-nu {
+		border-radius: 0;
+	}
+
+	.boton-numero .btn-0 {
+		border-bottom-left-radius: 20px;
+	}
+
+	.boton-numero .btn-sum {
+		border-bottom-right-radius: 20px;
+	}
+
+	/* Theme */
+
+	.theme-controls-container {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	#hamburger-btn {
+		display: block;
+		font-size: 24px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		color: white;
+		margin-bottom: 10px;
+	}
+
+	.theme-controls {
+		display: none;
+		background-color: rgba(0, 0, 0, 0.3);
+		padding: 10px;
+		border-radius: 8px;
+	}
+
+	.theme-controls.open {
+		display: flex;
+	}
+}

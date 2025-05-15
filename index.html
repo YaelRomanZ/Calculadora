@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calculadora</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="themes.css" />
+		<link rel="stylesheet" href="mobile.css" />
+	</head>
+	<body>
+		<div class="gradient"></div>
+
+		<div class="theme-controls-container">
+			<button
+				id="hamburger-btn"
+				aria-label="Toggle Theme Controls"
+				aria-expanded="false"
+			>
+				&#9776;
+				<!-- icono hamburguesa simple -->
+			</button>
+
+			<div class="theme-controls">
+				<label for="theme">Tema:</label>
+				<select id="theme" onchange="changeTheme()">
+					<option value="light">Claro</option>
+					<option value="dark">Oscuro</option>
+					<option value="dark-green">Oscuro - Verde</option>
+				</select>
+
+				<label>
+					<input
+						type="checkbox"
+						id="rememberTheme"
+						onchange="toggleRememberTheme()"
+					/>
+					Recordar tema
+				</label>
+			</div>
+		</div>
+
+		<div class="calculadora">
+			<h1 class="titulo">Calculadora</h1>
+			<div class="res-pan">
+				<input type="text" id="pantalla" disabled />
+				<input type="text" id="resultado" disabled />
+				<!--AYMT. En este input se muestra el resultado del calculo-->
+			</div>
+			<section class="botones-container">
+				<div class="botones">
+					<div class="boton-numero">
+						<button class="bt-op btn-clear" onclick="borrar()">C</button>
+						<button class="bt-op btn-div" onclick="operar('/')">/</button>
+						<button class="bt-op btn-sum" onclick="operar('+')">+</button>
+						<button class="bt-op btn-mult" onclick="operar('*')">x</button>
+						<button class="bt-op btn-sub" onclick="operar('-')">-</button>
+						<button class="bt-op btn-eq" onclick="calcular()">=</button>
+						<button class="bt-nu btn-1" onclick="insertar('1')">1</button>
+						<button class="bt-nu btn-2" onclick="insertar('2')">2</button>
+						<button class="bt-nu btn-3" onclick="insertar('3')">3</button>
+						<button class="bt-nu btn-4" onclick="insertar('4')">4</button>
+						<button class="bt-nu btn-5" onclick="insertar('5')">5</button>
+						<button class="bt-nu btn-6" onclick="insertar('6')">6</button>
+						<button class="bt-nu btn-7" onclick="insertar('7')">7</button>
+						<button class="bt-nu btn-8" onclick="insertar('8')">8</button>
+						<button class="bt-nu btn-9" onclick="insertar('9')">9</button>
+						<button class="bt-nu btn-0 cero" onclick="insertar('0')">0</button>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="footer">
+			<p>Equipo:</p>
+			<ul>
+				<li>Flores Beltran Juan Diego</li>
+				<li>Mendez Colin Victor Manuel</li>
+				<li>Reyes Renodn Yael Roman</li>
+				<li>Mondragon Tellez Antonio Yoab</li>
+			</ul>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
